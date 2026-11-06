@@ -6,11 +6,14 @@
 <div id="hud" hidden>
   <div class="pill" id="stats">💰 $<b id="m">0</b>　📅 Day <b id="d">1</b>　✅ <b id="sv">0</b>　😡 <b id="ls">0</b></div>
   <div class="pill right"><span id="rc"></span><button id="bsave">💾 セーブ</button><button id="bexp">⬇ 書き出し</button><button id="bload">📂 ロード</button><button id="bfile">📁 ファイル</button></div>
-  <div class="pill bottom">WASD / 矢印: 移動　Space / E: 操作　生地 → トッピング → オーブン → カウンター</div>
+  <div id="tk" hidden><h3>🧾 注文票</h3><div id="tko"></div><ol id="tks"></ol><div id="tki"></div></div>
+  <div id="xh"></div><div id="pr"></div><div id="bk" hidden><i id="bkn"></i></div>
+  <div class="pill bottom">WASD 移動　マウス 視点　E 操作　左クリック 作業　Q 取り消し　K セーブ</div>
 </div>
+<div id="lock" hidden>クリックして操作開始<br><small>Esc で一時停止（メニュー操作）</small></div>
 <div id="toast"></div>
 <div id="lobby" class="card">
-  <h1>🍕 PIZZERIA</h1><p class="sub">みんなで焼いて、売ろう</p>
+  <h1>🍕 PIZZERIA</h1><p class="sub">注文を受けて、自分の手で焼いて渡そう</p>
   <div id="s1">
     <input id="name" maxlength="12" placeholder="ニックネーム" autocomplete="off"><div id="sw"></div>
     <button id="create" class="big">ルームを作る</button>
